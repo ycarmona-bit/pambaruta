@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es-VE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>¿Qué hago si necesito ayuda? · PAM Baruta</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E1F12">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--verde:#0B130C;--hoja:#C6F23A;--esmeralda:#1C3A22;--hondo:#0E1F12;--menta:#E3E7DE;--crema:#F1F3EE;--tinta:#0B130C}
+*{box-sizing:border-box}
+body{margin:0;background:#e9e6d8;color:var(--tinta);font-family:'Figtree',system-ui,sans-serif;font-size:18px;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1{font:800 clamp(40px,8vw,68px)/1 'Figtree',sans-serif;color:var(--verde);margin:0;letter-spacing:-.02em}
+.hl{background:linear-gradient(transparent 52%,var(--hoja) 52%,var(--hoja) 94%,transparent 94%);padding:0 .1em;color:var(--tinta)}
+.m{display:block;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.bar{max-width:816px;margin:0 auto;padding:14px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.bar a,.bar button{font:600 17px 'Figtree',sans-serif;min-height:52px;padding:0 26px;border-radius:99px;border:2.5px solid var(--tinta);background:var(--hoja);color:var(--tinta);text-decoration:none;display:inline-flex;align-items:center;cursor:pointer}
+.bar a{background:#fff}
+.hoja-page{max-width:816px;margin:0 auto 24px;background:var(--crema);padding:44px 52px;display:flex;flex-direction:column;gap:20px;border-radius:12px}
+.logo{width:150px;aspect-ratio:155.73/51.77;color:var(--verde)}
+.tel{background:var(--verde);color:#fff;border-radius:36px;padding:26px 32px}
+.tel .k{font:700 14px 'Figtree',monospace;letter-spacing:.08em;color:var(--hoja);text-transform:uppercase}
+.tel .nums{display:flex;flex-wrap:wrap;gap:4px 0}
+.tel .nums a+a{border-left:3px solid var(--hoja);margin-left:28px;padding-left:28px}
+.tel a{display:block;font:700 clamp(26px,5.4vw,38px)/1.2 'Figtree',monospace;color:#fff;text-decoration:none;white-space:nowrap}
+.pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pasos div{background:#fff;border:2px solid var(--tinta);border-radius:24px;padding:16px 18px;font-weight:600}
+.pasos b{display:block;font:700 18px 'Figtree',monospace;color:var(--verde)}
+.dos{display:grid;grid-template-columns:1fr;gap:12px}
+.dos div{background:var(--menta);border:2px solid var(--tinta);border-radius:24px;padding:16px 18px}
+.dos .k{font:700 13px 'Figtree',monospace;color:var(--verde);text-transform:uppercase}
+.dos a{display:block;font:700 clamp(20px,4vw,25px) 'Figtree',monospace;color:var(--tinta);text-decoration:none;margin:4px 0}
+.pie{display:flex;align-items:center;gap:20px;margin-top:auto}
+.qr{width:124px;height:124px;border:2.5px dashed var(--verde);border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;font:700 12px 'Figtree',monospace;color:var(--verde);flex:none}
+.firma{font:600 30px/1 'Figtree',sans-serif;color:var(--verde);text-align:right}
+@media (max-width:640px){.hoja-page{padding:28px 20px;border-radius:0}.pasos,.dos{grid-template-columns:1fr}.pie{flex-wrap:wrap}}
+@page{size:letter;margin:0}
+@media print{
+  body{background:none}
+  .bar{display:none}
+  .hoja-page{margin:0;max-width:none;width:8.5in;min-height:11in;border-radius:0;padding:.5in .6in}
+}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a href="./">← Volver</a>
+  <button type="button" onclick="window.print()">Imprimir esta hoja</button>
+</div>
+<main class="hoja-page">
+  <span class="m logo" role="img" aria-label="PAM Baruta" style="--m:url(logo.svg)"></span>
+  <h1>¿Qué hago si necesito <span class="hl">ayuda</span>?</h1>
+  <p>Es gratis. Atendemos las 24 horas, todos los días.</p>
+  <div class="tel">
+    <p class="k">Llama a la asistencia médica 24/7</p>
+    <div class="nums"><a href="tel:+582129095270">0212 909 5270</a><a href="tel:+582126285270">0212 628 5270</a></div>
+  </div>
+  <div class="pasos">
+    <div><b>1</b>Dinos tu nombre</div>
+    <div><b>2</b>Tu número de cédula</div>
+    <div><b>3</b>Y dónde estás</div>
+  </div>
+  <div class="dos">
+    <div><p class="k">Medicamentos · WhatsApp</p><a href="https://wa.me/584141158604">0414 115 8604</a><p style="font-size:16px">Envía el informe médico y el récipe vigente.</p></div>
+  </div>
+  <div class="pie">
+    <div class="qr">[QR de registro]</div>
+    <p style="flex:1">¿Aún no te has registrado? Escanea el QR. Te toma dos minutos y es obligatorio para ser atendido.</p>
+    <p class="firma">Baruta<br>te cuida.</p>
+  </div>
+</main>
+</body>
+</html>
+

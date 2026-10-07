@@ -1,0 +1,26 @@
+{
+  "name": "PAM Baruta · Asistencia médica gratuita 24/7",
+  "short_name": "PAM Baruta",
+  "description": "Plan de salud gratuito de la Alcaldía de Baruta. Telemedicina, médico in situ, ambulancia y medicamentos, las 24 horas.",
+  "lang": "es-VE",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F1F3EE",
+  "theme_color": "#286240",
+  "categories": ["health", "medical"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Regístrate", "short_name": "Registro", "url": "./?source=shortcut#registro", "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] },
+    { "name": "Teléfonos y contacto", "short_name": "Contacto", "url": "./?source=shortcut#contacto", "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] },
+    { "name": "Hoja para la nevera", "short_name": "Nevera", "url": "./print.html?source=shortcut", "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] }
+  ]
+}
+
+

@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="es-VE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PAM Baruta · Asistencia médica gratuita 24/7 en Baruta</title>
+<meta name="description" content="Si vives en Baruta, tu salud ya está cubierta. Telemedicina, médico in situ, ambulancia y medicamentos, gratis y las 24 horas. Regístrate en dos minutos.">
+<meta name="theme-color" content="#286240">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PAM Baruta">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_VE">
+<meta property="og:site_name" content="PAM Baruta">
+<meta property="og:title" content="PAM Baruta · Asistencia médica gratuita 24/7 en Baruta">
+<meta property="og:description" content="Telemedicina, médico in situ, ambulancia y medicamentos. Gratis y las 24 horas. Baruta te cuida.">
+<meta property="og:url" content="https://pambaruta.com/">
+<meta property="og:image" content="https://pambaruta.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "PAM Baruta",
+  "alternateName": "Programa de Asistencia Médica de Baruta",
+  "url": "https://pambaruta.com/",
+  "logo": "https://pambaruta.com/icon-512.png",
+  "description": "Plan de salud gratuito de la Alcaldía de Baruta: telemedicina, médico in situ, ambulancia y medicamentos a domicilio, las 24 horas.",
+  "areaServed": { "@type": "AdministrativeArea", "name": "Municipio Baruta, Caracas, Venezuela" },
+  "foundingDate": "2020",
+  "isAccessibleForFree": true,
+  "openingHours": "Mo-Su 00:00-23:59",
+  "contactPoint": [
+    { "@type": "ContactPoint", "contactType": "emergency", "telephone": "+58-212-909-5270", "availableLanguage": "es" },
+    { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+58-212-628-5270", "availableLanguage": "es" }
+  ],
+  "sameAs": ["https://www.instagram.com/pambaruta"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Quién puede usarlo?", "acceptedAnswer": { "@type": "Answer", "text": "Cualquier vecino de Baruta que esté registrado." } },
+    { "@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": { "@type": "Answer", "text": "Nada. Es gratis, las 24 horas, los 365 días del año." } },
+    { "@type": "Question", "name": "¿Cómo me registro?", "acceptedAnswer": { "@type": "Answer", "text": "Llena el formulario en línea o escanea el QR. Te toma dos minutos y es obligatorio para ser atendido." } },
+    { "@type": "Question", "name": "¿Qué necesito al llamar?", "acceptedAnswer": { "@type": "Answer", "text": "Tu nombre, tu cédula y dónde estás." } },
+    { "@type": "Question", "name": "¿Cómo pido medicamentos?", "acceptedAnswer": { "@type": "Answer", "text": "Escríbenos por WhatsApp al 0414 115 8604 y envía el informe médico y el récipe vigente. Atendemos de lunes a viernes de 7:00 am a 4:00 pm, y fines de semana y feriados de 8:00 am a 4:00 pm." } },
+    { "@type": "Question", "name": "¿Qué pasa si tengo que ir a una clínica?", "acceptedAnswer": { "@type": "Answer", "text": "Si hace falta, sale la ambulancia hacia un centro aliado." } }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0B130C; --paper:#F1F3EE; --mist:#E3E7DE; --lime:#C6F23A; --forest:#0E1F12; --forest2:#1C3A22;
+  --urllogo:url(logo.svg); --urlhoja:url(hoja.svg);
+  --sat:env(safe-area-inset-top,0px); --sab:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:104px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Figtree',system-ui,sans-serif;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+h1,h2,h3{font-weight:800;line-height:1.02;margin:0;letter-spacing:-.035em}
+p{margin:0}
+a{color:inherit}
+.mono{font-family:'Figtree',monospace}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.sr{position:absolute;left:-9999px}
+.sr:focus{left:12px;top:12px;z-index:100;background:#fff;padding:12px 18px;border-radius:12px}
+
+/* Fondo suave con manchas: da profundidad al vidrio */
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:var(--paper)}
+.bg i{position:absolute;border-radius:50%;filter:blur(100px)}
+.bg i:nth-child(1){width:640px;height:640px;right:-180px;top:-120px;background:rgba(198,242,58,.5)}
+.bg i:nth-child(2){width:700px;height:700px;left:-260px;top:30%;background:rgba(186,196,176,.7)}
+.bg i:nth-child(3){width:620px;height:620px;right:-200px;bottom:-160px;background:rgba(198,242,58,.4)}
+
+.m{display:block;background:currentColor;-webkit-mask:var(--urlhoja) center/contain no-repeat;mask:var(--urlhoja) center/contain no-repeat}
+.m.lg{-webkit-mask-image:var(--urllogo);mask-image:var(--urllogo)}
+.logo{width:132px;aspect-ratio:155.73/51.77;color:var(--ink)}
+
+/* Superficies */
+.glass{background:rgba(255,255,255,.64);-webkit-backdrop-filter:blur(22px) saturate(1.4);backdrop-filter:blur(22px) saturate(1.4);border:1px solid rgba(255,255,255,.9);box-shadow:0 24px 60px -30px rgba(11,19,12,.45),inset 0 1px 0 #fff;color:var(--ink)}
+.glass-d{background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(22px) saturate(1.3);backdrop-filter:blur(22px) saturate(1.3);border:1px solid rgba(255,255,255,.22);color:#fff}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:rgba(255,255,255,.95)}.glass-d{background:rgba(14,31,18,.92)}}
+.dark{background:radial-gradient(700px 420px at 90% 0%,rgba(198,242,58,.32),transparent 65%),linear-gradient(160deg,var(--forest2),var(--forest) 70%);color:#fff}
+.limebg{background:var(--lime);color:var(--ink)}
+
+/* Etiqueta tipo ficha y palabra destacada */
+.chip{display:inline-flex;align-items:center;gap:8px;font:700 13px/1 'Figtree',monospace;letter-spacing:.06em;text-transform:uppercase;padding:10px 16px;border-radius:99px;background:var(--lime);color:var(--ink);margin-bottom:22px;line-height:1.3;text-align:center;text-wrap:balance}
+.chip:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.dark .chip{background:var(--lime);color:var(--ink)}
+.dark .chip:before{background:var(--ink)}
+.limebg .chip{background:#fff}
+.pill{display:inline-block;background:var(--lime);color:var(--ink);padding:.02em .2em .06em;border-radius:.26em;margin:0 -.04em}
+.val{display:inline-block;font:700 11px/1.5 'Figtree',monospace;letter-spacing:.06em;border:1.5px dashed currentColor;border-radius:99px;padding:1px 9px;white-space:nowrap;vertical-align:middle}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 30px;border-radius:99px;font:600 18px/1.2 'Figtree',sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.btn-lime{background:var(--lime);color:var(--ink)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-glass{background:rgba(255,255,255,.7);border-color:#fff;color:var(--ink)}
+.btn-w{border-color:rgba(255,255,255,.7);color:#fff}
+.go{width:56px;height:56px;border-radius:50%;background:var(--lime);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.go svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+/* Animaciones al pasar el cursor o tocar */
+.btn,.go,.fchip,.card,.ct,.step,.stat,.event,.print,.reg-card,details,.ic{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s,background-color .2s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn:active{transform:translateY(1px) scale(.96)}
+.btn-lime:hover{box-shadow:0 16px 30px -10px rgba(140,190,10,.95)}
+.btn-ink:hover{box-shadow:0 16px 30px -10px rgba(11,19,12,.7)}
+.btn-glass:hover{background:#fff}
+.btn svg{transition:transform .28s}
+.btn:hover svg{transform:rotate(-12deg) scale(1.12)}
+.step .n{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s}
+.step:active .n{transform:scale(.92)}
+.card:active,.ct:active,.stat:active,.event:active,.print:active,.reg-card:active,details:active{transform:scale(.985)}
+@media (hover:hover){
+  .card:hover,.ct:hover,.stat:hover,.event:hover,.print:hover,.reg-card:hover{transform:translateY(-7px);box-shadow:0 34px 60px -28px rgba(11,19,12,.55)}
+  .step:hover .n{transform:translateY(-6px) scale(1.12) rotate(-6deg);box-shadow:0 0 0 6px rgba(198,242,58,.9),0 14px 24px -8px rgba(11,19,12,.5)}
+  .card:hover .ic{transform:rotate(-10deg) scale(1.1)}
+  details:hover{transform:translateX(6px);box-shadow:0 24px 50px -26px rgba(11,19,12,.5)}
+  .fchip:hover{transform:translateY(-4px)}
+  .menu a{transition:background-color .2s,transform .2s}
+  .menu a:hover{transform:translateY(-1px)}
+}
+.tabbar a{transition:transform .2s,background-color .2s}
+.tabbar a:active{transform:scale(.9)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.btn:hover,.card:hover,.ct:hover,.stat:hover,.event:hover,.print:hover,.reg-card:hover,.step:hover,details:hover{transform:none}}
+:focus-visible{outline:4px solid var(--ink);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--lime)}
+
+.install{background:var(--forest);color:#fff;font-size:16px}
+.install .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.install p{flex:1 1 240px}
+.install button{font:600 16px 'Figtree',sans-serif;min-height:48px;border-radius:99px;border:0;padding:0 22px;cursor:pointer}
+.install .y{background:var(--lime);color:var(--ink)}
+.install .n{background:transparent;color:#fff;text-decoration:underline}
+
+/* Encabezado */
+header.top{position:sticky;top:0;z-index:50;padding:calc(12px + var(--sat)) 0 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;max-width:1200px;padding:0 10px 0 28px!important;border-radius:99px}
+.menu{display:flex;gap:6px}
+.menu a{text-decoration:none;font-weight:500;padding:12px 18px;border-radius:99px}
+.menu a:hover,.menu a[aria-current]{background:rgba(198,242,58,.6)}
+.nav .btn{min-height:52px;padding:0 24px}
+
+/* Hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;border-radius:52px;margin-top:14px;display:block;min-height:clamp(660px,88vh,820px);background:linear-gradient(135deg,rgba(255,255,255,.75),rgba(206,214,196,.7));border:1px solid #fff;box-shadow:0 40px 80px -50px rgba(11,19,12,.5)}
+.hero:before{content:"";position:absolute;z-index:-1;width:520px;height:520px;border-radius:50%;right:-60px;bottom:-140px;background:var(--lime);filter:blur(70px);opacity:.8}
+.hero-in{position:relative;z-index:2;width:min(500px,45%);margin:28px;padding:40px 36px 34px;border-radius:44px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:rgba(255,255,255,.68);-webkit-backdrop-filter:blur(22px) saturate(1.4);backdrop-filter:blur(22px) saturate(1.4);border:1px solid rgba(255,255,255,.9);box-shadow:0 24px 60px -30px rgba(11,19,12,.45),inset 0 1px 0 #fff}
+.hero-in .ctas,.hero-in .mini{justify-content:center}
+.hero .sub{margin-left:auto;margin-right:auto}
+.hero h1{font-size:clamp(34px,4vw,56px)}
+.hero .sub{font-size:18px;max-width:420px;margin:18px auto 24px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.mini{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px}
+.mini b{display:block;font:800 clamp(26px,2.6vw,34px)/1 'Figtree',sans-serif;letter-spacing:-.03em}
+.mini span{font-size:16px;font-weight:500}
+.hero-art{position:absolute;inset:0}
+.hero-art img{position:absolute;right:0;bottom:0;height:auto;width:min(76%,860px);max-width:none;max-height:97%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 26%);mask-image:linear-gradient(90deg,transparent 0,#000 26%);object-fit:contain;object-position:right bottom;filter:drop-shadow(0 30px 36px rgba(11,19,12,.28))}
+.hero-art .lbl{position:absolute;inset:12% 8% 14% 8%;border:2px dashed var(--ink);border-radius:36px;display:flex;align-items:center;justify-content:center;text-align:center;font:700 14px/1.5 'Figtree',monospace;padding:16px;background:rgba(255,255,255,.5)}
+.fchip{position:absolute;border-radius:24px;padding:14px 20px;display:flex;align-items:center;gap:12px;font-weight:600;line-height:1.25}
+.fchip .go{width:44px;height:44px}
+.fchip .go svg{width:20px;height:20px}
+.fc1{right:4%;bottom:6%}
+.fc2{right:6%;top:6%}
+
+.trust{margin-top:18px;border-radius:99px;padding:18px 36px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px;list-style:none;margin-bottom:0}
+.trust li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:19px}
+.trust li svg{width:44px;height:44px;padding:9px;border-radius:50%;background:var(--lime);stroke:var(--ink);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+section.sec{padding:100px 0;text-align:center}
+.sec h2,.sec .lead{margin-left:auto;margin-right:auto}
+.card,.ct,.steps,.event,.print,.panel,.impacto,.stat,details{text-align:left}
+.sec h2{font-size:clamp(38px,5vw,68px);max-width:900px}
+.sec>h2,.sec>.chip,.sec>.lead{text-align:center}
+.sec>.chip{display:flex;width:fit-content;margin-left:auto;margin-right:auto}
+.lead{font-size:clamp(19px,2vw,22px);max-width:620px;margin-top:20px}
+
+/* Servicios */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:52px}
+.card{border-radius:40px;padding:34px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;min-height:280px}
+.card h3{font-size:clamp(28px,3vw,38px);margin-top:auto}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start}
+.ic{width:68px;height:68px;border-radius:50%;background:#fff;color:var(--ink);display:flex;align-items:center;justify-content:center;border:2px solid var(--ink)}
+.ic svg{width:32px;height:32px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.dark .ic{background:var(--lime);border-color:var(--lime)}
+.limebg .ic{background:var(--ink);color:var(--lime);border-color:var(--ink)}
+.c1{grid-column:span 4;min-height:340px}
+.c2{grid-column:span 2}
+.c3,.c4,.c5{grid-column:span 2}
+.c5{background:linear-gradient(150deg,rgba(255,255,255,.75),rgba(198,242,58,.6));border:1px solid #fff}
+.c5 .leaf{position:absolute;right:-34px;top:-24px;width:220px;height:187px;background:var(--forest2);opacity:.12;-webkit-mask:var(--urlhoja) center/contain no-repeat;mask:var(--urlhoja) center/contain no-repeat}
+.card,.ct.big,.panel,.foot-panel{isolation:isolate}
+.ct.big,.foot-panel{position:relative;overflow:hidden}
+.leafdeco{position:absolute;z-index:-1;right:-40px;bottom:-50px;width:300px;height:255px;background:var(--lime);opacity:.22;-webkit-mask:var(--urlhoja) center/contain no-repeat;mask:var(--urlhoja) center/contain no-repeat;transform:rotate(-14deg);pointer-events:none}
+.panel .leafdeco,.ct.big .leafdeco,.foot-panel .leafdeco{bottom:auto;top:-40px;width:340px;height:289px}
+.card .ring{position:absolute;right:-90px;bottom:-110px;width:340px;height:340px;border-radius:50%;border:44px solid rgba(198,242,58,.35)}
+
+/* Pasos */
+.steps{margin-top:52px;border-radius:48px;padding:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
+.step{position:relative}
+.step .n{width:64px;height:64px;border-radius:50%;background:#286240;color:#fff;box-shadow:0 0 0 6px rgba(198,242,58,.7);display:flex;align-items:center;justify-content:center;font:700 22px 'Figtree',monospace;position:relative;z-index:1}
+.step:not(:last-child):after{content:"";position:absolute;left:80px;right:-16px;top:31px;border-top:3px dotted var(--ink);opacity:.5}
+.step h3{font-size:clamp(18px,1.85vw,24px);margin:22px 0 10px;white-space:nowrap}
+
+/* Registro */
+.panel{border-radius:52px;padding:64px;position:relative;overflow:hidden}
+#registro .ctas{justify-content:center}
+.sec h2.one-line{white-space:nowrap;font-size:clamp(26px,3.5vw,46px)}
+.reg-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.reg-card{border-radius:40px;padding:34px;text-align:center;color:var(--ink)}
+.qr{width:208px;height:208px;margin:16px auto 10px;background:#fff;border-radius:18px;padding:12px;border:2px solid var(--ink)}
+.panel h2{color:#fff}
+
+/* Contacto */
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:52px}
+.ct{border-radius:40px;padding:36px;display:flex;flex-direction:column;align-items:flex-start}
+.sec .ct{align-items:center;text-align:center}
+.ct>.btn{margin-top:auto;align-self:stretch}
+.ct>:nth-last-child(2){margin-bottom:24px}
+.ct>.num:nth-last-child(2){margin-bottom:34px}
+.ct .num{display:block;font:700 clamp(22px,2.3vw,29px)/1.2 'Figtree',monospace;color:var(--ink);text-decoration:none;margin:8px 0;letter-spacing:-.02em}
+.ct.big{grid-row:auto}
+.ct.big .num{color:#fff;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:4px;text-underline-offset:7px}
+.ct .k{font:700 13px 'Figtree',monospace;letter-spacing:.06em;text-transform:uppercase}
+
+/* Impacto: lima */
+.impacto{border-radius:52px;padding:64px;position:relative;overflow:hidden;isolation:isolate}
+.impacto h2{white-space:nowrap;font-size:clamp(26px,3.5vw,46px);max-width:none;margin:0}
+.impacto svg.wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:60%;z-index:-1}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:48px}
+.stat{border-radius:36px;padding:32px}
+.stat strong{display:block;font:800 clamp(54px,7vw,104px)/1 'Figtree',sans-serif;letter-spacing:-.05em;margin-bottom:12px}
+.stat p{font-size:20px;font-weight:500}
+.s1{grid-column:span 3}.s2{grid-column:span 3;background:var(--ink);color:#fff;border-color:var(--ink)}.s3{grid-column:span 2}.s4{grid-column:span 4}
+
+.event{display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center;border-radius:44px;padding:30px 36px;margin-top:44px}
+.date{width:112px;height:168px;border-radius:99px;background:var(--lime);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font:700 13px 'Figtree',monospace;text-align:center}
+.date b{font:800 56px/1 'Figtree',sans-serif;letter-spacing:-.04em}
+.date .cal{width:44px;height:44px;stroke:var(--ink);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:6px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;font:700 15px 'Figtree',monospace}
+.meta span{background:var(--lime);padding:9px 18px;border-radius:99px}
+
+.faq{max-width:880px;margin:44px auto 0}
+#faq{text-align:center}
+#faq h2{margin-left:auto;margin-right:auto}
+#faq details{text-align:left}
+details{border-radius:30px;margin-bottom:12px;padding:0 30px}
+summary{cursor:pointer;list-style:none;font-weight:600;font-size:clamp(18px,2vw,21px);min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";width:40px;height:40px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;font:700 24px 'Figtree',monospace;flex:none}
+details[open] summary:after{content:"–"}
+details p{padding:0 0 26px;max-width:700px}
+
+.print{border-radius:48px;padding:52px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+
+.sec .print .lead{margin:14px 0 0;max-width:none;white-space:nowrap;font-size:clamp(15px,1.6vw,20px);text-align:left}
+.event p{text-wrap:balance;max-width:640px}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.how{border-radius:40px;padding:34px;text-align:left}
+.how h3{font-size:clamp(22px,2.2vw,28px);display:flex;align-items:center;gap:12px;white-space:nowrap}
+.how h3 svg{width:40px;height:40px;padding:8px;border-radius:50%;background:var(--lime);stroke:var(--ink);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.how ol{list-style:none;counter-reset:p;padding:0;margin:22px 0 0;display:grid;gap:16px}
+.how li{counter-increment:p;position:relative;padding-left:48px;min-height:34px;display:flex;align-items:center}
+.how li:before{content:counter(p);position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px}
+.how-note{margin-top:28px;font-size:18px}
+footer{padding:24px 0 40px}
+.foot-panel{border-radius:52px;padding:64px;overflow:hidden;position:relative}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:36px}
+.foot .logo{color:#fff;width:170px}
+.foot a{text-decoration:none;display:inline-block;padding:6px 0}
+.foot a:hover{text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:3px}
+.foot .k{font:700 13px 'Figtree',monospace;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;opacity:.85}
+.aliados{display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-top:26px}
+.alc{display:block;width:130px;height:auto}
+.no{display:block;width:170px;height:auto}
+.logos{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.logos span{border:2px dashed rgba(255,255,255,.7);border-radius:16px;padding:14px 18px;font:500 13px 'Figtree',monospace}
+.firma{font:800 clamp(40px,7vw,104px)/.95 'Figtree',sans-serif;letter-spacing:-.05em;margin-top:56px;text-align:right;white-space:nowrap}
+.firma span{color:var(--lime)}
+
+.tabbar{display:none}
+@media (max-width:900px){
+  body{padding-bottom:calc(100px + var(--sab))}
+  .menu,.nav .btn span.t{display:none}
+  .nav{padding:0 8px 0 20px!important;min-height:64px}
+  .nav .btn{min-height:48px;padding:0 18px}
+  .logo{width:112px}
+  .hero{display:grid;grid-template-columns:1fr;border-radius:36px;min-height:0}
+  .hero-in{width:auto;margin:0;padding:36px 22px 8px;border-radius:0;background:none;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+  .hero-art{position:relative;inset:auto;min-height:360px}
+  .hero-art img{height:100%;right:0;left:0;margin:0 auto}
+  .fc1{left:12px;bottom:16px}.fc2{right:12px;top:8px}
+  .trust{border-radius:32px;padding:20px 22px}
+  .bento,.stats,.contact,.reg-grid,.foot,.print,.event{grid-template-columns:1fr}
+  .bento .card,.stats .stat{grid-column:auto}
+  .steps{grid-template-columns:1fr;padding:28px 22px;border-radius:36px;gap:26px}
+  .step:not(:last-child):after{display:none}
+  .card{padding:28px;border-radius:34px;min-height:240px}
+  .ct.big{grid-row:auto}
+  .panel,.impacto,.foot-panel{padding:32px 22px;border-radius:36px}
+  .event{padding:26px}
+  .how-grid{grid-template-columns:1fr;margin-top:30px}
+  .how{padding:26px;border-radius:34px}
+  .how h3{font-size:24px}
+  .how-note{font-size:17px;margin-top:22px}
+  .print{padding:30px;border-radius:36px}
+  section.sec{padding:48px 0}
+  .glass,.gd{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+  .bg i{filter:blur(40px)}
+  .hero-photo .orb,.panel .orb{filter:blur(40px)}
+  .chip{font-size:12px;letter-spacing:.03em;padding:9px 14px;margin-bottom:18px}
+  .hero h1{font-size:40px}
+  .hero .sub{font-size:18px;margin:18px 0 24px}
+  .hero .ctas .btn{width:100%}
+  .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+  .mini b{font-size:26px}
+  .mini span{display:block;font-size:13px;line-height:1.25;margin-top:4px}
+  .hero-art{min-height:0;margin-top:10px}
+  .hero-art img{position:relative;display:block;width:100%;height:auto;max-width:none;max-height:none;left:auto;right:auto;top:auto;bottom:auto;margin:0;-webkit-mask-image:none;mask-image:none}
+  .hero-art .lbl{position:relative;inset:auto;margin:10px;min-height:200px}
+  .fchip{padding:10px 14px;font-size:14px;border-radius:20px}
+  .fchip .go{width:36px;height:36px}
+  .fc1{left:8px;right:auto;bottom:8px;top:auto}.fc2{right:8px;bottom:8px;top:auto}
+  .fchip{padding:8px 12px;font-size:13px}
+  .fchip .go{display:none}
+  .trust{display:grid;grid-template-columns:1fr 1fr;gap:14px 10px}
+  .trust li{font-size:15px;gap:8px;line-height:1.2}
+  .trust li svg{width:38px;height:38px;padding:8px}
+  .sec h2{font-size:36px}
+  .sec h2.one-line{font-size:5.4vw}
+  .impacto h2{white-space:normal;font-size:30px}
+  .sec .print .lead{white-space:normal;text-align:center;margin:14px auto 0;font-size:18px}
+  .lead{font-size:18px}
+  .bento{margin-top:32px;gap:12px}
+  .card{min-height:0;padding:24px;gap:10px}
+  .card h3{margin-top:12px;font-size:28px}
+  .c1{min-height:0}
+  .ic{width:56px;height:56px}
+  .ic svg{width:27px;height:27px}
+  .steps{margin-top:32px}
+  .step h3{font-size:22px;margin:14px 0 6px}
+  .step .n{width:52px;height:52px;font-size:18px}
+  .stats{margin-top:28px;gap:12px}
+  .stat{padding:24px}
+  .stat strong{font-size:52px}
+  .stat p{font-size:18px}
+  .contact{margin-top:32px}
+  .ct{padding:26px}
+  .ct .num{font-size:25px}
+  .ct .btn,.reg-card .btn,.print .btn,.event .btn{width:100%}
+  .date{width:auto;height:auto;flex-direction:row;gap:10px;padding:12px 24px;align-self:flex-start}
+  .date .cal{width:28px;height:28px;margin:0}
+  .date b{font-size:36px}
+  .meta span{padding:8px 14px;font-size:14px}
+  .faq{margin-top:28px}
+  details{padding:0 20px;border-radius:26px}
+  summary{min-height:64px;font-size:18px}
+  .qr{width:180px;height:180px}
+  .foot-panel{padding:32px 22px}
+  .firma{font-size:56px;margin-top:36px}
+  .foot{grid-template-columns:1fr 1fr;gap:28px 16px}
+  .foot>div:nth-child(1){grid-column:1/-1}
+  .foot>div:nth-child(2){text-align:left}
+  .foot>div:nth-child(3){text-align:right}
+  .foot>div:nth-child(1){padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.2)}
+  .foot>div:nth-child(1)>p{max-width:300px;margin:16px auto 0;font-size:16px}
+  .foot .aliados{justify-content:center;gap:26px;margin-top:24px}
+  .foot .alc{width:104px}
+  .foot .no{width:140px}
+  .foot a{font-size:17px;padding:7px 0}
+  .foot-panel .leafdeco{left:auto;right:-70px;top:auto;bottom:-30px;margin:0;width:230px;height:195px;opacity:.14}
+  .firma{margin-top:30px;font-size:min(52px,9.4vw)}
+  /* Todo centrado en teléfono */
+  .card,.ct,.steps,.step,.event,.print,.panel,.impacto,.stat,.foot-panel,.foot,.reg-grid,.firma{text-align:center}
+  .card,.ct{align-items:center}
+  .card .top{justify-content:center}
+  .step .n{margin:0 auto}
+  .date,.meta,.ctas,.aliados,.mini{justify-content:center}
+  .date{align-self:center}
+  .foot .logo{margin-left:auto;margin-right:auto}
+  .foot-panel .aliados img{margin:0}
+  .panel .lead,.print .lead{margin-left:auto;margin-right:auto}
+  .leafdeco{right:auto;left:50%;margin-left:-110px}
+  .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:10px;right:10px;bottom:calc(10px + var(--sab));z-index:60;border-radius:34px;padding:6px;align-items:end}
+  .tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:60px;text-decoration:none;font:600 13px/1.1 'Figtree',sans-serif;color:var(--ink);border-radius:24px}
+  .tabbar a svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .tabbar a[aria-current]{background:rgba(198,242,58,.6)}
+  .tabbar a.main{background:var(--lime);min-height:70px;margin-top:-24px;border-radius:26px;border:2px solid var(--ink)}
+}
+@media (display-mode:standalone){.install{display:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<a class="sr" href="#contenido">Saltar al contenido</a>
+
+<div class="install" id="install" hidden>
+  <div class="wrap">
+    <p id="installMsg">Instala PAM Baruta en tu teléfono y tenla siempre a un toque.</p>
+    <button class="y" id="installGo" type="button">Instalar app</button>
+    <button class="n" id="installNo" type="button">Ahora no</button>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap nav glass">
+    <a href="#inicio" aria-label="PAM Baruta, inicio"><span class="m lg logo" role="img" aria-label="PAM Baruta"></span></a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#servicios" data-s="servicios">Servicios</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#registro" data-s="registro">Regístrate</a>
+      <a href="#contacto" data-s="contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-lime" href="tel:+582129095270"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span>Llamar<span class="t"> · 0212 909 5270</span></span></a>
+  </div>
+</header>
+
+<main id="contenido">
+<div class="wrap">
+
+<section id="inicio">
+  <div class="hero">
+    <div class="hero-in">
+      <p class="chip">Plan de salud gratuito · Alcaldía de Baruta</p>
+      <h1>Si vives en Baruta, tu salud ya está <span class="pill">cubierta.</span></h1>
+      <p class="sub">Telemedicina, médico in situ, ambulancia y medicamentos. Gratis y las 24 horas, todos los días del año.</p>
+      <div class="ctas">
+        <a class="btn btn-lime js-reg" href="#registro">Regístrate gratis</a>
+        <a class="btn btn-glass" href="tel:+582129095270">Llama ahora</a>
+      </div>
+      <div class="mini">
+        <div><b>+67 mil</b><span>vecinos registrados</span></div>
+        <div><b>24/7</b><span>todo el año</span></div>
+        <div><b>2020</b><span>cuidándote desde</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <p class="lbl">[FOTO]<br>Doctora y vecina.<br>Guarda la imagen como hero.webp</p>
+      <img src="hero.webp" width="1200" height="922" alt="Un médico del PAM comparte una sonrisa con una vecina de Baruta" fetchpriority="high" onload="var l=this.parentNode.querySelector('.lbl');if(l)l.remove()" onerror="this.remove()">
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="servicios">
+  <p class="chip">Servicios</p>
+  <h2>Todo lo que necesitas,<br><span class="pill">sin pagar nada.</span></h2>  <div class="bento">
+    <article class="card c1 dark">
+      <div class="top"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div></div>
+      <h3>Telemedicina</h3>
+      <p style="max-width:520px">Consulta por llamada o videollamada con un médico. Incluye seguimiento, lectura de resultados y segunda opinión.</p>
+      <span class="leafdeco"></span>
+    </article>
+    <article class="card c2 glass">
+      <div class="top"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div></div>
+      <h3>Médico in situ</h3>
+      <p>Un médico va a donde estás y te trata en el momento: endovenoso, intramuscular, oral o respiratorio.</p>
+    </article>
+    <article class="card c3 glass">
+      <div class="top"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16V7h11v9M13 10h4l4 4v2h-2M2 16h2M8 16h7"/><circle cx="6.5" cy="17" r="2"/><circle cx="17.5" cy="17" r="2"/><path d="M7.5 9v4M5.5 11h4"/></svg></div></div>
+      <h3>Ambulancia</h3>
+      <p>Traslados de emergencia las 24 horas, hacia un centro aliado.</p>
+    </article>
+    <article class="card c4 limebg">
+      <div class="top"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg></div></div>
+      <h3>Medicamentos</h3>
+      <p>Te los llevamos a domicilio para tratamientos de hasta 7 días. Escríbenos por WhatsApp.</p>
+    </article>
+    <article class="card c5">
+      <span class="leaf"></span>
+      <div class="top"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg></div></div>
+      <h3>Baruta te cuida.</h3>
+      <p>Llama o escribe cuando lo necesites. Estamos para ti.</p>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="como-funciona">
+  <p class="chip">Cómo funciona</p>
+  <h2>Cuatro pasos. <span class="pill">Así de simple.</span></h2>
+  <div class="steps glass">
+    <div class="step"><div class="n">01</div><h3>Llamas o escribes</h3><p>Llama al 0212 909 5270, a cualquier hora.</p></div>
+    <div class="step"><div class="n">02</div><h3>Te atendemos</h3><p>Nuestro contact center te pide tu nombre, cédula y dónde estás.</p></div>
+    <div class="step"><div class="n">03</div><h3>Un médico te evalúa</h3><p>Por teléfono o videollamada, en el momento.</p></div>
+    <div class="step"><div class="n">04</div><h3>Vamos a ti</h3><p>Si hace falta, va un médico a donde estás o sale la ambulancia.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="registro">
+  <div class="panel dark">
+    <span class="leafdeco"></span>
+    <div class="reg-grid">
+      <div>
+        <p class="chip">Regístrate</p>
+        <h2>Te toma <span class="pill">dos minutos.</span></h2>
+        <p class="lead">El registro es obligatorio para que podamos atenderte. Hazlo tú, o ayuda a tus papás a hacerlo. Una sola vez y listo.</p>
+        <div class="ctas" style="margin-top:30px">
+          <a class="btn btn-lime js-reg" href="#registro">Llenar el formulario</a>        </div>
+      </div>
+      <div class="reg-card glass">
+        <p class="chip" style="margin-bottom:6px">¿Desde tu teléfono?</p>
+        <div class="qr" role="img" aria-label="Código QR del formulario de registro (ejemplo, reemplazar)">
+          <svg viewBox="0 0 21 21" width="100%" height="100%" shape-rendering="crispEdges"><g fill="#0B130C"><path d="M0 0h7v7H0zM14 0h7v7h-7zM0 14h7v7H0z"/><path fill="#fff" d="M1 1h5v5H1zM15 1h5v5h-5zM1 15h5v5H1z"/><path d="M2 2h3v3H2zM16 2h3v3h-3zM2 16h3v3H2zM8 1h2v2H8zM10 4h2v2h-2zM8 8h2v2H8zM12 8h3v2h-3zM9 11h2v3H9zM12 12h2v2h-2zM15 10h2v2h-2zM18 9h2v3h-2zM8 16h3v2H8zM12 15h2v3h-2zM16 14h2v2h-2zM17 17h3v3h-3zM10 19h2v2h-2z"/></g></svg>
+        </div>
+        <p class="mono" style="font-size:13px;font-weight:700">[QR · reemplazar por el real]</p>
+        <p style="margin-top:10px">Apunta la cámara, entra y regístrate. Imprímelo y pégalo donde lo vean tus vecinos.</p>
+        <a class="btn btn-ink" style="margin-top:18px" href="print.html">Imprimir QR y teléfonos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contacto">
+  <p class="chip">Contacto</p>
+  <h2>Escoge <span class="pill">tu canal.</span></h2>
+  <div class="contact">
+    <div class="ct big dark">
+      <span class="leafdeco"></span>
+      <p class="k">Asistencia médica 24/7</p>
+      <p style="margin-top:8px">Llama a cualquier hora, cualquier día.</p>
+      <a class="num" href="tel:+582129095270">0212 909 5270</a>
+      <a class="num" href="tel:+582126285270">0212 628 5270</a>
+      <a class="btn btn-lime" href="tel:+582129095270">Llamar ahora</a>
+    </div>
+    <div class="ct glass">
+      <p class="k">WhatsApp medicamentos</p>
+      <a class="num" href="https://wa.me/584141158604">0414 115 8604</a>
+      <p>Envía el informe médico y el récipe vigente.</p>
+      <p class="mono" style="font-size:14px;margin-top:12px;font-weight:500">Farmacia<br>Lun a vie · 7:00 am a 4:00 pm<br>Fines de semana y feriados · 8:00 am a 4:00 pm</p>
+      <a class="btn btn-ink" href="https://wa.me/584141158604">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="impacto">
+  <div class="impacto limebg">
+    <svg class="wave" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"><path d="M0 220C150 120 300 120 450 200S750 320 900 220 1100 80 1200 140V400H0Z" fill="#B7E524"/><path d="M0 300C200 220 380 240 560 300S900 380 1200 260V400H0Z" fill="#A9D61C" opacity=".7"/></svg>
+    <p class="chip">Impacto</p>
+    <h2>Esto es lo que hemos hecho <span class="pill" style="background:var(--ink);color:var(--lime)">juntos.</span></h2>
+    <div class="stats">
+      <div class="stat s1 glass"><strong>+7.900</strong><p>atenciones médicas desde enero 2025</p></div>
+      <div class="stat s2"><strong>8 de 10</strong><p>casos se resolvieron en casa, sin ambulancia</p></div>
+      <div class="stat s3 glass"><strong>+650</strong><p>entregas de medicamentos a domicilio</p></div>
+      <div class="stat s4 glass"><strong style="font-size:clamp(40px,4.6vw,64px)">Presentes</strong><p>en eventos de la Alcaldía con guardias de prevención.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="jornadas">
+  <p class="chip">Jornadas y eventos</p>
+  <h2>Encuéntranos <span class="pill">en tu zona.</span></h2>
+  <div class="event glass">
+    <div class="date"><svg class="cal" id="evIcon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="4"/><path d="M8 3v4M16 3v4M3 10h18"/></svg><span id="evDia">Pronto</span><b id="evNum" hidden></b><span id="evMes" hidden></span></div>
+    <div>
+      <h3 style="font-size:clamp(26px,3vw,36px)" id="evTitulo">Próxima jornada de salud y registro</h3>
+      <div class="meta"><span id="evLugar">Fecha por anunciar</span><span id="evHora">Lugar por anunciar</span></div>
+      <p style="margin-top:14px" id="evTexto">Síguenos en @pambaruta para enterarte primero. Mientras tanto, regístrate y ten tu cobertura lista.</p>
+    </div>
+    <a class="btn btn-ink js-reg" href="#registro">Regístrate antes</a>
+  </div>
+</section>
+
+<section class="sec" id="instalar">
+  <p class="chip">Instala la app</p>
+  <h2>Ten el PAM <span class="pill">en tu teléfono.</span></h2>
+  <div class="how-grid">
+    <article class="how glass">
+      <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M11 18.5h2"/></svg>Android</h3>
+      <ol>
+        <li>Abre esta página en Chrome.</li>
+        <li>Toca el menú de tres puntos, arriba a la derecha.</li>
+        <li>Elige “Instalar app” o “Agregar a la pantalla principal”.</li>
+        <li>Toca “Instalar”. El ícono de PAM Baruta aparece en tu pantalla.</li>
+      </ol>
+    </article>
+    <article class="how glass">
+      <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 5.5h4"/></svg>iPhone</h3>
+      <ol>
+        <li>Abre esta página en Safari, no en otro navegador.</li>
+        <li>Toca el botón Compartir: el cuadrado con una flecha hacia arriba.</li>
+        <li>Baja y elige “Agregar a inicio”.</li>
+        <li>Toca “Agregar”. Listo, ya está en tu pantalla.</li>
+      </ol>
+    </article>
+    <article class="how glass">
+      <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2.5"/><path d="M8 20h8M12 16v4"/></svg>Computadora</h3>
+      <ol>
+        <li>Abre esta página en Chrome o Edge.</li>
+        <li>Busca el ícono de instalar al final de la barra de direcciones.</li>
+        <li>Haz clic en “Instalar”.</li>
+        <li>La app se abre en su propia ventana, como cualquier programa.</li>
+      </ol>
+    </article>
+  </div>
+  <p class="how-note">Es gratis y casi no ocupa espacio. Así tienes el número de ayuda siempre a un toque.</p>
+  <div class="ctas" style="justify-content:center;margin-top:20px"><button class="btn btn-lime" id="installBtn" type="button" hidden>Instalar ahora</button></div>
+</section>
+
+<section class="sec" id="faq">
+  <p class="chip">Preguntas frecuentes</p>
+  <h2>Lo que más nos <span class="pill">preguntan.</span></h2>
+  <div class="faq">
+    <details class="glass"><summary>¿Quién puede usarlo?</summary><p>Cualquier vecino de Baruta que esté registrado.</p></details>
+    <details class="glass"><summary>¿Cuánto cuesta?</summary><p>Nada. Es gratis, las 24 horas, los 365 días del año.</p></details>
+    <details class="glass"><summary>¿Cómo me registro?</summary><p>Llena el formulario en línea o escanea el QR. Te toma dos minutos y es obligatorio para ser atendido.</p></details>
+    <details class="glass"><summary>¿Qué necesito al llamar?</summary><p>Tu nombre, tu cédula y dónde estás.</p></details>
+    <details class="glass"><summary>¿Cómo pido medicamentos?</summary><p>Escríbenos por WhatsApp al 0414 115 8604 y envía el informe médico y el récipe vigente. Atendemos de lunes a viernes de 7:00 am a 4:00 pm, y fines de semana y feriados de 8:00 am a 4:00 pm.</p></details>
+    <details class="glass"><summary>¿Qué pasa si tengo que ir a una clínica?</summary><p>Si hace falta, sale la ambulancia hacia un centro aliado.</p></details>
+  </div>
+</section>
+
+<section class="sec" id="nevera" style="padding-top:10px">
+  <div class="print glass">
+    <div>
+      <p class="chip">Para la nevera</p>
+      <h2 class="one-line">¿Qué hago si <span class="pill">necesito ayuda</span>?</h2>
+      <p class="lead">Imprímela y pégala donde la vea toda la familia, sobre todo tus papás.</p>
+    </div>
+    <a class="btn btn-ink" href="print.html">Ver e imprimir hoja</a>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-panel dark">
+      <span class="leafdeco"></span>
+      <div class="foot">
+        <div>
+          <span class="m lg logo" role="img" aria-label="PAM Baruta"></span>
+          <p style="margin-top:18px;max-width:380px">Programa de Asistencia Médica de la Alcaldía de Baruta, operado por Grupo Nueve Once desde 2020.</p>
+          <div class="aliados">
+            <img class="alc" src="baruta-blanco.png" width="367" height="323" alt="Alcaldía de Baruta, Calidad de vida" loading="lazy">
+            <img class="no" src="nueve-once-blanco.png" width="640" height="188" alt="Grupo Nueve Once" loading="lazy">
+          </div>
+        </div>
+        <div>
+          <p class="k">Ir a</p>
+          <a href="#servicios">Servicios</a><br><a href="#como-funciona">Cómo funciona</a><br><a href="#registro">Regístrate</a><br><a href="#contacto">Contacto</a>
+        </div>
+        <div>
+          <p class="k">Síguenos</p>
+          <a href="https://www.instagram.com/pambaruta">@pambaruta</a><br>
+          <a class="mono" href="tel:+582129095270">0212 909 5270</a>
+        </div>
+      </div>
+      <p class="firma">Baruta te cuida<span>.</span></p>
+    </div>
+  </div>
+</footer>
+
+<nav class="tabbar glass" aria-label="Navegación de la app">
+  <a href="#inicio" data-s="inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Inicio</a>
+  <a href="#servicios" data-s="servicios"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/><rect x="3" y="3" width="18" height="18" rx="5"/></svg>Servicios</a>
+  <a class="main js-reg" href="#registro" data-s="registro"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg>Registro</a>
+  <a href="tel:+582129095270"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Llamar</a>
+  <a href="#contacto" data-s="contacto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Contacto</a>
+</nav>
+
+<script>
+// ---- Próxima jornada: edita solo este bloque. Deja null si no hay jornada. ----
+const PROXIMA_JORNADA = null; // ej: { dia:'SÁB', num:'18', mes:'OCT', titulo:'Jornada de salud y registro', lugar:'Plaza ...', hora:'8:00 am a 12:00 m' }
+// ---- Formulario de registro: pega aquí la URL real (todos los botones de registro usan la misma) ----
+const URL_REGISTRO = null; // ej: 'https://...'
+
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  if (PROXIMA_JORNADA) {
+    $('evIcon').hidden = true; $('evNum').hidden = false; $('evMes').hidden = false;
+    $('evDia').textContent = PROXIMA_JORNADA.dia; $('evNum').textContent = PROXIMA_JORNADA.num; $('evMes').textContent = PROXIMA_JORNADA.mes;
+    $('evTitulo').textContent = PROXIMA_JORNADA.titulo;
+    $('evLugar').textContent = 'Lugar: ' + PROXIMA_JORNADA.lugar; $('evHora').textContent = 'Hora: ' + PROXIMA_JORNADA.hora;
+    $('evTexto').textContent = 'Ven, regístrate y conoce al equipo.';
+  }
+  if (URL_REGISTRO) {
+    document.querySelectorAll('.js-reg').forEach(function (a) { a.href = URL_REGISTRO; a.target = '_blank'; a.rel = 'noopener'; });
+  }
+
+  var links = document.querySelectorAll('[data-s]');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (a) { a.toggleAttribute('aria-current', a.dataset.s === e.target.id); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['inicio', 'servicios', 'registro', 'contacto'].forEach(function (id) { var s = $(id); if (s) io.observe(s); });
+  }
+
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+  }
+
+  var bar = $('install'), deferred = null;
+  var standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+  var dismissed = false;
+  try { dismissed = localStorage.getItem('pam-install-no') === '1'; } catch (e) {}
+  function show(msg, showBtn) {
+    if (standalone || dismissed) return;
+    $('installMsg').textContent = msg; $('installGo').hidden = !showBtn; bar.hidden = false;
+  }
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault(); deferred = e; $('installBtn').hidden = false;
+    show('Instala PAM Baruta en tu teléfono y tenla siempre a un toque.', true);
+  });
+  function doInstall() {
+    if (!deferred) return;
+    deferred.prompt(); deferred.userChoice.finally(function () { deferred = null; bar.hidden = true; $('installBtn').hidden = true; });
+  }
+  $('installGo').addEventListener('click', doInstall);
+  $('installBtn').addEventListener('click', doInstall);
+  $('installNo').addEventListener('click', function () {
+    bar.hidden = true; try { localStorage.setItem('pam-install-no', '1'); } catch (e) {}
+  });
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+  if (ios && !standalone) show('Para instalar: toca el botón Compartir y luego “Agregar a inicio”.', false);
+  window.addEventListener('appinstalled', function () { bar.hidden = true; });
+})();
+</script>
+</body>
+</html>
+
